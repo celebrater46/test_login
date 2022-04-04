@@ -1,4 +1,4 @@
 <?php
 
-$mail = "test@gmail.com";
-$password = "test";
+const EMAIL = "test@gmail.com";
+const PASSWORD = "test";

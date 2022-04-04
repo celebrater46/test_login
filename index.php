@@ -27,7 +27,7 @@ if (!empty($_POST)) {
     }
 
     if(empty($err_msg)){
-        if(PASSWORD === $user_password){
+        if(EMAIL === $user_email && PASSWORD === $user_password){
             $_SESSION['email'] = $user_email;
             header('Location: mypage.php');
             exit;
