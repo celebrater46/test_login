@@ -7,7 +7,7 @@ function h($s){
 session_start();
 
 if (isset($_SESSION['email'])) {
-    echo 'Welcome ' .  h($_SESSION['email']) . ".<br>";
+    echo 'Welcome ' .  h($_SESSION['email']) . ".<br><br>";
     echo "Please click <a href='logout.php'>here</a> to logout.";
     exit;
 }
