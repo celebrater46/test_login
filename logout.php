@@ -22,4 +22,4 @@ if (ini_get("session.use_cookies")) {
 
 @session_destroy();
 
-echo $output;
+echo $output . "<br><br><a href='index.php'>BACK</a>";

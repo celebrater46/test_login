@@ -4,7 +4,10 @@ require_once "init.php";
 
 session_start();
 
-$err_msg = array();
+$err_msg = [
+    "email" => "",
+    "password" => ""
+];
 
 if (!empty($_POST)) {
     $user_email = $_POST['email'];
@@ -26,7 +29,7 @@ if (!empty($_POST)) {
         $err_msg['password'] = 'Please input your password in alphanumerical.';
     }
 
-    if(empty($err_msg)){
+    if($err_msg["email"] === "" && $err_msg["password"] === ""){
         if(EMAIL === $user_email && PASSWORD === $user_password){
             $_SESSION['email'] = $user_email;
             header('Location: mypage.php');
