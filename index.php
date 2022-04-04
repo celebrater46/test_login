@@ -35,7 +35,7 @@ if (!empty($_POST)) {
             header('Location: mypage.php');
             exit;
         }else{
-            $err_msg['email'] = 'The password you input is wrong.';
+            $err_msg['email'] = 'Either the email or password is incorrect.';
         }
     }
 }
