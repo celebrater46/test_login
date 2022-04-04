@@ -59,7 +59,7 @@ if (!empty($_POST)) {
         </label>
         <div class="err_msg"><?php echo $err_msg['password']; ?></div>
         <label for=""><span>パスワード</span>
-            <input type="text" name="password" id=""><br>
+            <input type="password" name="password" id=""><br>
         </label>
         <input type="submit" value="送信">
     </form>
