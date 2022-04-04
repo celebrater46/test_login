@@ -1,4 +1,4 @@
 <?php
 
-$mail = "jota.16.stigma.world@gmail.com";
-$password = "password";
+$mail = "test@gmail.com";
+$password = "test";
